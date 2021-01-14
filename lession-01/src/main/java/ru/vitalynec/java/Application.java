@@ -1,6 +1,9 @@
 package ru.vitalynec.java;
 
 public class Application {
+    /**
+    * 1. Создать пустой проект в IntelliJ IDEA и прописать метод main()
+    * */
     public static void main(String[] args) {
 
     }
@@ -32,7 +35,7 @@ public class Application {
      * лежит в пределах от 10 до 20 (включительно), если да – вернуть true, в противном случае – false.
      */
     private static boolean checkInterval(int a, int b) {
-        return (a + b) > 10 && (a + b) < 20;
+        return (a + b) >= 10 && (a + b) <= 20;
     }
 
     /**
