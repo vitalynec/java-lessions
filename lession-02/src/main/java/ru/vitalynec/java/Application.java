@@ -1,11 +1,14 @@
 package ru.vitalynec.java;
 
+import java.util.Arrays;
+
 public class Application {
 
     public static void main(String[] args) {
         invertArray(new int[]{1, 1, 0, 0, 1, 0, 1, 1, 0, 0});
         initAndFillThrees(8);
         multiplyLessSix(new int[]{1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1});
+        fillMartixDiagonal(5);
         minAndMax(new int[]{1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1});
         checkBalance(new int[]{2, 2, 2, 1, 2, 2, 10, 1});
         shiftArray(new int[]{1, 2, 3, 4, 5}, -2);
@@ -57,7 +60,7 @@ public class Application {
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
                 matrix[i][j] = 0;
-                if (i == j) {
+                if (i == j || (i + j == size - 1)) {
                     matrix[i][j] = 1;
                 }
             }
