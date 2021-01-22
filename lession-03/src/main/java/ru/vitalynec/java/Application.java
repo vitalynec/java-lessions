@@ -25,6 +25,12 @@ public class Application {
             if (guessedNumber == userNumber) {
                 System.out.println("Вы угадали число! Победа!");
                 break;
+            } else {
+                if (guessedNumber > userNumber) {
+                    System.out.println("Загаданное число больше, чем ваше");
+                } else {
+                    System.out.println("Загаданное число меньше, чем ваше");
+                }
             }
         }
         System.out.println("Повторить игру еще раз? 1 – да / 0 – нет");
